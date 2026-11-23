@@ -1,0 +1,234 @@
+{
+ "whitelist": [
+  {
+   "host": "indianbank.localhost",
+   "id": "demo_indianbank",
+   "name": "Indian Bank",
+   "color": "#0b2a5b",
+   "accent": "#f2b705"
+  },
+  {
+   "host": "hdfcbank.localhost",
+   "id": "demo_hdfcbank",
+   "name": "HDFC Bank",
+   "color": "#004c8f",
+   "accent": "#ed1c24"
+  },
+  {
+   "host": "sbibank.localhost",
+   "id": "demo_sbibank",
+   "name": "State Bank of India",
+   "color": "#1565a8",
+   "accent": "#00a1e0"
+  },
+  {
+   "host": "icicibank.localhost",
+   "id": "demo_icicibank",
+   "name": "ICICI Bank",
+   "color": "#8f2a12",
+   "accent": "#f58220"
+  },
+  {
+   "host": "axisbank.localhost",
+   "id": "demo_axisbank",
+   "name": "Axis Bank",
+   "color": "#8e1b4a",
+   "accent": "#e4002b"
+  },
+  {
+   "host": "kotakbank.localhost",
+   "id": "demo_kotakbank",
+   "name": "Kotak Mahindra Bank",
+   "color": "#003874",
+   "accent": "#ed1c24"
+  },
+  {
+   "host": "pnbindia.localhost",
+   "id": "demo_pnbindia",
+   "name": "Punjab National Bank",
+   "color": "#8c1c13",
+   "accent": "#fdb913"
+  },
+  {
+   "host": "bankofbaroda.localhost",
+   "id": "demo_bankofbaroda",
+   "name": "Bank of Baroda",
+   "color": "#c4470c",
+   "accent": "#1d3f72"
+  },
+  {
+   "host": "canarabank.localhost",
+   "id": "demo_canarabank",
+   "name": "Canara Bank",
+   "color": "#00538b",
+   "accent": "#ffd200"
+  },
+  {
+   "host": "unionbank.localhost",
+   "id": "demo_unionbank",
+   "name": "Union Bank of India",
+   "color": "#1b4f9c",
+   "accent": "#e31837"
+  },
+  {
+   "host": "yesbank.localhost",
+   "id": "demo_yesbank",
+   "name": "Yes Bank",
+   "color": "#004990",
+   "accent": "#e4002b"
+  },
+  {
+   "host": "idfcfirstbank.localhost",
+   "id": "demo_idfcfirstbank",
+   "name": "IDFC FIRST Bank",
+   "color": "#9c1d26",
+   "accent": "#f0b323"
+  }
+ ],
+ "blacklist": [
+  {
+   "host": "indiianbank.localhost",
+   "look": "demo_indianbank",
+   "relay": false,
+   "reason": "Typosquatting: domain differs from the real indianbank.localhost by one letter"
+  },
+  {
+   "host": "indianbank-otp-verify.localhost",
+   "look": "demo_indianbank",
+   "relay": true,
+   "reason": "OTP-harvesting page imitating Indian Bank"
+  },
+  {
+   "host": "hdfc-secure-login.localhost",
+   "look": "demo_hdfcbank",
+   "relay": false,
+   "reason": "Fake secure-login page impersonating HDFC Bank"
+  },
+  {
+   "host": "hdfcbank.account-verify.localhost",
+   "look": "demo_hdfcbank",
+   "relay": true,
+   "reason": "Subdomain trick: real bank name placed in front of a scam domain"
+  },
+  {
+   "host": "sbibank-verify.localhost",
+   "look": "demo_sbibank",
+   "relay": true,
+   "reason": "Phishing site that relays the real bank's live logo"
+  },
+  {
+   "host": "sbibank.secure-login.localhost",
+   "look": "demo_sbibank",
+   "relay": false,
+   "reason": "Subdomain trick: looks like sbibank but belongs to secure-login.localhost"
+  },
+  {
+   "host": "netbanking-sbi-offers.localhost",
+   "look": "demo_sbibank",
+   "relay": false,
+   "reason": "Fake festival-offer page collecting net-banking credentials"
+  },
+  {
+   "host": "icicibank-login.localhost",
+   "look": "demo_icicibank",
+   "relay": false,
+   "reason": "Reported credential-harvesting clone of ICICI Bank"
+  },
+  {
+   "host": "icicibank-prize.localhost",
+   "look": "demo_icicibank",
+   "relay": true,
+   "reason": "Lottery / prize scam that asks for card details"
+  },
+  {
+   "host": "axisbamk.localhost",
+   "look": "demo_axisbank",
+   "relay": false,
+   "reason": "Typosquatting: 'm' used instead of 'n' in axisbank"
+  },
+  {
+   "host": "axis-bank-kyc-update.localhost",
+   "look": "demo_axisbank",
+   "relay": false,
+   "reason": "Fake KYC-update scam threatening account closure"
+  },
+  {
+   "host": "axisbank.loan-offer.localhost",
+   "look": "demo_axisbank",
+   "relay": true,
+   "reason": "Subdomain trick: fake instant-loan offer"
+  },
+  {
+   "host": "kotakbank-rewards.localhost",
+   "look": "demo_kotakbank",
+   "relay": true,
+   "reason": "Fake reward-points redemption page"
+  },
+  {
+   "host": "kotak-mahindra-verify.localhost",
+   "look": "demo_kotakbank",
+   "relay": false,
+   "reason": "Impersonation page asking to 're-verify' the account"
+  },
+  {
+   "host": "pnbindia-alert.localhost",
+   "look": "demo_pnbindia",
+   "relay": false,
+   "reason": "Fake 'account suspended' alert page"
+  },
+  {
+   "host": "pnb1ndia.localhost",
+   "look": "demo_pnbindia",
+   "relay": false,
+   "reason": "Look-alike domain: digit '1' used instead of letter 'i'"
+  },
+  {
+   "host": "bankofbaroda-netbanking.localhost",
+   "look": "demo_bankofbaroda",
+   "relay": true,
+   "reason": "Unofficial net-banking portal copying Bank of Baroda"
+  },
+  {
+   "host": "bobbank-refund.localhost",
+   "look": "demo_bankofbaroda",
+   "relay": false,
+   "reason": "Fake refund page collecting login details"
+  },
+  {
+   "host": "canarabank-support.localhost",
+   "look": "demo_canarabank",
+   "relay": false,
+   "reason": "Fake customer-support page asking for remote access"
+  },
+  {
+   "host": "canara-bank-login.localhost",
+   "look": "demo_canarabank",
+   "relay": true,
+   "reason": "Phishing login relaying the real bank's live logo"
+  },
+  {
+   "host": "unionbank-kyc.localhost",
+   "look": "demo_unionbank",
+   "relay": false,
+   "reason": "Fake KYC-expiry notice impersonating Union Bank"
+  },
+  {
+   "host": "yesbnk.localhost",
+   "look": "demo_yesbank",
+   "relay": false,
+   "reason": "Typosquatting: missing 'a' in yesbank"
+  },
+  {
+   "host": "yesbank-cashback.localhost",
+   "look": "demo_yesbank",
+   "relay": true,
+   "reason": "Cashback scam page"
+  },
+  {
+   "host": "idfcfirst-login.localhost",
+   "look": "demo_idfcfirstbank",
+   "relay": false,
+   "reason": "Unregistered domain imitating IDFC FIRST Bank login"
+  }
+ ]
+}

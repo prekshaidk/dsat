@@ -1,0 +1,4 @@
+flask>=2.3
+pillow>=10.0
+numpy>=1.24
+pycryptodome>=3.18
